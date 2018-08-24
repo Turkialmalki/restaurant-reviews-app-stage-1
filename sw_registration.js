@@ -6,10 +6,7 @@
 
 // Register service worker (default scope)
 if (navigator.serviceWorker) {
-	navigator.serviceWorker.register('service_worker.js', {
-		// Set scope to full project
-		scope: '/mws-restaurant-stage-1/'
-	});
+	navigator.serviceWorker.register('service_worker.js');
 	console.log('Service worker registered!');
 }
 
