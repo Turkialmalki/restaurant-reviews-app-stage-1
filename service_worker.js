@@ -17,6 +17,7 @@
 //     '/index.html',
 //     '/restaurant.html',
 //     '/css/styles.css',
+//     '/css/responsive.css',
 //     '/js/dbhelper.js',
 //     '/js/main.js',
 //     '/js/restaurant_info.js',

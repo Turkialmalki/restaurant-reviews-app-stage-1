@@ -1,0 +1,86 @@
+/*
+
+ responsive.css
+ Employs responsive CSS using media queries for the Restaurant Reviews App
+ Author: Steve Prager
+
+*/
+
+@media screen and (max-width: 400px) {
+	#restaurants-list li h1 {
+		font-size: 14pt;
+	}
+	#restaurants-list .restaurant-img {
+		height: 200px;
+	}
+/*
+
+@media screen and (min-width: 1000px) {
+	html, body {
+		width: 1000px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+@media screen and (min-width: 750px) {
+	#portfolio {
+		font-size: 1.3em;
+		margin: 0.8em;
+	}
+}
+
+@media screen and (max-width: 570px) {
+	#web-design-image {
+		width: 300px;
+		height: 180px;
+	}
+}
+
+@media screen and (max-width: 720px) {
+	.project {
+		width: 100%;
+		margin: 5px;
+	}
+	.project-title {
+		width: 20%;
+		font-size: 1.4em;
+	}
+	.project-image {
+		width: 40%;
+	}
+	.project-link {
+		width: 20%;
+		font-size: 0.9em;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	#portfolio {
+		font-size: 0.8em;
+	}
+	#ATC-image {
+	    height: 90px;
+    }
+    #PAM-image {
+	    height: 160px;
+    }
+    #CT-image {
+        height: 110px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+	#portfolio {
+		font-size: 0.6em;
+	}
+	.personal-logo {
+		height: 70px;
+	    width: 90px;
+	    margin: 5px;
+	}
+	#web-design-image {
+		width: 250px;
+		height: 150px;
+	}
+}*/
