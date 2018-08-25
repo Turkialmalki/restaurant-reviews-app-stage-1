@@ -2,17 +2,240 @@
 
  responsive.css
  Employs responsive CSS using media queries for the Restaurant Reviews App
+ Attempt to deploy "default" as smallest screen size and then "em" up scale
  Author: Steve Prager
 
 */
 
+/* Minimum screen size (small mobile) */
 @media screen and (max-width: 400px) {
 	#restaurants-list li h1 {
-		font-size: 14pt;
+		font-size: 13pt;
 	}
 	#restaurants-list .restaurant-img {
 		height: 200px;
 	}
+}
+
+/* Slightly larger (mid/large mobile) */
+@media screen and (min-width: 381px) and (max-width: 524px) {
+	nav h1 a {
+		font-size: 1.5em;
+	}
+	.filter-options h2 {
+		font-size: 1.6em;
+	}
+	.filter-options select {
+		max-width: 400px;
+	}
+	#restaurants-list {
+		padding-left: 30px;
+	}
+	#restaurants-list li {
+		/*width: 40%;*/
+		margin-right: 10px;
+		margin-left: 10px;
+		display: inline-block;
+	}
+	#restaurants-list li h1, #restaurants-list p, #restaurants-list li a {
+		font-size: 1.5em;
+	}
+	#footer {
+		font-size: 1.3em;
+	}
+	#restaurants-list .restaurant-img {
+		height: 200px;
+		width: 260px;
+	}
+}
+
+/* Slightly larger (mid-size tablet) */
+@media screen and (min-width: 525px) and (max-width: 1200px) {
+	#restaurants-list li a {
+		margin-top: 20px;
+	}
+}
+
+@media screen and (min-width: 525px) and (max-width: 680px) {
+	nav h1 a {
+		font-size: 2.2em;
+	}
+	.filter-options h2 {
+		font-size: 1.6em;
+	}
+
+	#restaurants-list {
+		padding-left: 30px;
+	}
+	#restaurants-list li {
+		width: 45%;
+		height: 425px;
+		margin-right: 10px;
+		margin-left: 10px;
+		display: inline-block;
+	}
+	#restaurants-list li h1{
+		font-size: 1.5em;
+	}
+	#restaurants-list li a {
+		margin-top: 20px;
+	}
+	#restaurants-list .restaurant-img {
+		height: 200px;
+		width: 200px;
+	}
+}
+
+/* Slightly larger  tablet) */
+@media screen and (min-width: 680px) and (max-width: 844px) {
+	nav h1 a {
+		font-size: 2.2em;
+	}
+	.filter-options h2 {
+		font-size: 2.0em;
+	}
+	.filter-options select {
+		max-width: 40%;
+	}
+	#restaurants-list {
+		padding-left: 30px;
+	}
+	#restaurants-list li {
+		width: 45%;
+		height: 475px;
+		margin-right: 10px;
+		margin-left: 10px;
+		display: inline-block;
+	}
+	#restaurants-list li h1{
+		font-size: 1.5em;
+	}
+	#restaurants-list p, #restaurants-list li a {
+		font-size: 1.5em;
+	}
+	#footer {
+		font-size: 1.3em;
+	}
+	#restaurants-list .restaurant-img {
+		height: 240px;
+		width: 240px;
+	}
+}
+
+/* Near full size (computer)) */
+@media screen and (min-width: 845px) and (max-width: 999px) {
+	nav h1 a {
+		font-size: 2.2em;
+	}
+	.filter-options h2 {
+		font-size: 2.0em;
+	}
+	.filter-options select {
+		max-width: 40%;
+	}
+	#restaurants-list {
+		padding-left: 30px;
+	}
+	#restaurants-list li {
+		width: 30%;
+		height: 475px;
+		margin-right: 10px;
+		margin-left: 10px;
+		display: inline-block;
+	}
+	#restaurants-list li h1{
+		font-size: 1.5em;
+	}
+	#restaurants-list p, #restaurants-list li a {
+		font-size: 1.5em;
+	}
+	#footer {
+		font-size: 1.3em;
+	}
+	#restaurants-list .restaurant-img {
+		height: 200px;
+		width: 200px;
+	}
+}
+
+
+/* Full size (computer)) */
+@media screen and (min-width: 999px) {
+	.filter-options select {
+		max-width: 410px;
+	}
+}
+
+@media screen and (min-width: 999px) and (max-width: 1200px) {
+	nav h1 a {
+		font-size: 2.2em;
+	}
+	.filter-options h2 {
+		font-size: 2.0em;
+	}
+	#restaurants-list {
+		padding-left: 30px;
+	}
+	#restaurants-list li {
+		width: 30%;
+		height: 500px;
+		margin-right: 10px;
+		margin-left: 10px;
+		display: inline-block;
+	}
+	#restaurants-list li h1{
+		font-size: 1.5em;
+	}
+	#restaurants-list p, #restaurants-list li a {
+		font-size: 1.5em;
+	}
+	#footer {
+		font-size: 1.3em;
+	}
+	#restaurants-list .restaurant-img {
+		height: 250px;
+		width: 250px;
+	}
+}
+
+
+/* Full size (large computer)) */
+@media screen and (min-width: 1200px) {
+	nav h1 a {
+		font-size: 2.2em;
+	}
+	.filter-options h2 {
+		font-size: 2.0em;
+	}
+	.filter-options select {
+		max-width: 40%;
+	}
+	#restaurants-list {
+		padding-left: 30px;
+	}
+	#restaurants-list li {
+		width: 30%;
+		height: 500px;
+		margin-right: 10px;
+		margin-left: 10px;
+		display: inline-block;
+	}
+	#restaurants-list li h1{
+		font-size: 1.8em;
+	}
+	#restaurants-list p, #restaurants-list li a {
+		font-size: 1.5em;
+	}
+	#footer {
+		font-size: 1.3em;
+	}
+	#restaurants-list .restaurant-img {
+		height: 275px;
+		width: 275px;
+	}
+}
+
+
 /*
 
 @media screen and (min-width: 1000px) {
