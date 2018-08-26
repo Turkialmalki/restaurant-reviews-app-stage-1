@@ -1,8 +1,11 @@
 /*
 
- responsive.css
+ responsive-index.css
  Employs responsive CSS using media queries for the Restaurant Reviews App
  Attempt to deploy "default" as smallest screen size and then "em" up scale
+
+ This only applies responsive design to index.html. Restaurant.html 
+ is handled in 'responsive-rest.css'
  Author: Steve Prager
 
 */
