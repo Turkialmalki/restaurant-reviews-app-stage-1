@@ -12,116 +12,128 @@
 
 /* Minimum screen size (small mobile) */
 @media screen and (max-width: 400px) {
-	#restaurants-list li h1 {
-		font-size: 13pt;
+	.inside #map-container {
+		width: 100%;
 	}
-	#restaurants-list .restaurant-img {
-		height: 200px;
+	#restaurant-container, #reviews-container, #breadcrumb {
+		width: 100%;
+	}
+	#restaurant-name {
+		font-size: 1.5em;
+	}
+	#restaurant-hours td {
+		width: 100px;
+	}
+	.review-comments {
+		font-size: 0.8em;
+	}
+	.review-name, .review-date, .review-rating {
+		font-size: 1.0em;
 	}
 }
 
 /* Slightly larger (mid/large mobile) */
-@media screen and (min-width: 381px) and (max-width: 524px) {
+@media screen and (min-width: 400px) and (max-width: 510px) {
 	nav h1 a {
 		font-size: 1.5em;
 	}
-	.filter-options h2 {
-		font-size: 1.6em;
+	#restaurant-name {
+		font-size: 1.8em;
 	}
-	.filter-options select {
-		max-width: 400px;
+	#restaurant-cuisine {
+		font-size: 1.8em;
 	}
-	#restaurants-list {
-		padding-left: 30px;
-	}
-	#restaurants-list li {
-		/*width: 40%;*/
-		margin-right: 10px;
-		margin-left: 10px;
-		display: inline-block;
-	}
-	#restaurants-list li h1, #restaurants-list p, #restaurants-list li a {
-		font-size: 1.5em;
-	}
-	#footer {
+	#restaurant-hours td {
+		text-align: center;
 		font-size: 1.3em;
 	}
-	#restaurants-list .restaurant-img {
-		height: 200px;
-		width: 260px;
+	#reviews-container h2 {
+		font-size: 2.5em;
+	}
+	.review-name, .review-date, .review-rating {
+		font-size: 1.3em;
 	}
 }
 
-/* Slightly larger (mid-size tablet) */
-@media screen and (min-width: 525px) and (max-width: 1200px) {
-	#restaurants-list li a {
-		margin-top: 20px;
-	}
-}
-
-@media screen and (min-width: 525px) and (max-width: 680px) {
+/* Slightly larger (small-size tablet) */
+@media screen and (min-width: 510px) and (max-width: 670px) {
 	nav h1 a {
-		font-size: 2.2em;
+		font-size: 2.0em;
 	}
-	.filter-options h2 {
-		font-size: 1.6em;
+	#restaurant-name {
+		font-size: 3.0em;
 	}
-
-	#restaurants-list {
-		padding-left: 30px;
-	}
-	#restaurants-list li {
-		width: 45%;
-		height: 425px;
-		margin-right: 10px;
-		margin-left: 10px;
-		display: inline-block;
-	}
-	#restaurants-list li h1{
+	#restaurant-address {
 		font-size: 1.5em;
 	}
-	#restaurants-list li a {
-		margin-top: 20px;
+	#restaurant-cuisine {
+		font-size: 1.8em;
 	}
-	#restaurants-list .restaurant-img {
-		height: 200px;
-		width: 200px;
+	#restaurant-img, #restaurant-cuisine {
+		width: 400px;
+	}
+	#restaurant-hours td {
+		text-align: center;
+		font-size: 1.3em;
+	}
+	#reviews-container h2 {
+		font-size: 3.0em;
+	}
+	.review-name, .review-date, .review-rating {
+		font-size: 1.3em;
 	}
 }
 
 /* Slightly larger  tablet) */
-@media screen and (min-width: 680px) and (max-width: 844px) {
+/* NOTE: here we're switching to flex display */
+@media screen and (min-width: 670px) and (max-width: 844px) {
+	#maincontent {
+		display: flex;
+		flex-wrap: wrap;
+		width: 100%;
+	}
+	#restaurant-container {
+		order: 1;
+		margin: 0;
+	}
+	#map-container {
+		order: 2;
+		margin: 0;
+	}
+	#reviews-container {
+		order: 3;
+		margin: 0;
+	}
+	#restaurant-container, #reviews-container, #map-container {
+		width: 49%;
+	}
+	#map-container, #map {
+		height: 100%;
+	}
 	nav h1 a {
 		font-size: 2.2em;
 	}
-	.filter-options h2 {
-		font-size: 2.0em;
+	#restaurant-name {
+		font-size: 3.0em;
 	}
-	.filter-options select {
-		max-width: 40%;
-	}
-	#restaurants-list {
-		padding-left: 30px;
-	}
-	#restaurants-list li {
-		width: 45%;
-		height: 475px;
-		margin-right: 10px;
-		margin-left: 10px;
-		display: inline-block;
-	}
-	#restaurants-list li h1{
+	#restaurant-address {
 		font-size: 1.5em;
 	}
-	#restaurants-list p, #restaurants-list li a {
-		font-size: 1.5em;
+	#restaurant-cuisine {
+		font-size: 1.8em;
 	}
-	#footer {
+	#restaurant-img, #restaurant-cuisine {
+		width: 90%;
+	}
+	#restaurant-hours td {
+		text-align: center;
 		font-size: 1.3em;
 	}
-	#restaurants-list .restaurant-img {
-		height: 240px;
-		width: 240px;
+	#reviews-container h2 {
+		font-size: 3.0em;
+	}
+	.review-name, .review-date, .review-rating {
+		font-size: 1.3em;
 	}
 }
 
@@ -130,74 +142,17 @@
 	nav h1 a {
 		font-size: 2.2em;
 	}
-	.filter-options h2 {
-		font-size: 2.0em;
-	}
-	.filter-options select {
-		max-width: 40%;
-	}
-	#restaurants-list {
-		padding-left: 30px;
-	}
-	#restaurants-list li {
-		width: 30%;
-		height: 475px;
-		margin-right: 10px;
-		margin-left: 10px;
-		display: inline-block;
-	}
-	#restaurants-list li h1{
-		font-size: 1.5em;
-	}
-	#restaurants-list p, #restaurants-list li a {
-		font-size: 1.5em;
-	}
-	#footer {
-		font-size: 1.3em;
-	}
-	#restaurants-list .restaurant-img {
-		height: 200px;
-		width: 200px;
-	}
 }
 
 
 /* Full size (computer)) */
 @media screen and (min-width: 999px) {
-	.filter-options select {
-		max-width: 410px;
-	}
+
 }
 
 @media screen and (min-width: 999px) and (max-width: 1200px) {
 	nav h1 a {
 		font-size: 2.2em;
-	}
-	.filter-options h2 {
-		font-size: 2.0em;
-	}
-	#restaurants-list {
-		padding-left: 30px;
-	}
-	#restaurants-list li {
-		width: 30%;
-		height: 500px;
-		margin-right: 10px;
-		margin-left: 10px;
-		display: inline-block;
-	}
-	#restaurants-list li h1{
-		font-size: 1.5em;
-	}
-	#restaurants-list p, #restaurants-list li a {
-		font-size: 1.5em;
-	}
-	#footer {
-		font-size: 1.3em;
-	}
-	#restaurants-list .restaurant-img {
-		height: 250px;
-		width: 250px;
 	}
 }
 
@@ -207,106 +162,5 @@
 	nav h1 a {
 		font-size: 2.2em;
 	}
-	.filter-options h2 {
-		font-size: 2.0em;
-	}
-	.filter-options select {
-		max-width: 40%;
-	}
-	#restaurants-list {
-		padding-left: 30px;
-	}
-	#restaurants-list li {
-		width: 30%;
-		height: 500px;
-		margin-right: 10px;
-		margin-left: 10px;
-		display: inline-block;
-	}
-	#restaurants-list li h1{
-		font-size: 1.8em;
-	}
-	#restaurants-list p, #restaurants-list li a {
-		font-size: 1.5em;
-	}
-	#footer {
-		font-size: 1.3em;
-	}
-	#restaurants-list .restaurant-img {
-		height: 275px;
-		width: 275px;
-	}
 }
 
-
-/*
-
-@media screen and (min-width: 1000px) {
-	html, body {
-		width: 1000px;
-		margin-left: auto;
-		margin-right: auto;
-	}
-}
-
-@media screen and (min-width: 750px) {
-	#portfolio {
-		font-size: 1.3em;
-		margin: 0.8em;
-	}
-}
-
-@media screen and (max-width: 570px) {
-	#web-design-image {
-		width: 300px;
-		height: 180px;
-	}
-}
-
-@media screen and (max-width: 720px) {
-	.project {
-		width: 100%;
-		margin: 5px;
-	}
-	.project-title {
-		width: 20%;
-		font-size: 1.4em;
-	}
-	.project-image {
-		width: 40%;
-	}
-	.project-link {
-		width: 20%;
-		font-size: 0.9em;
-	}
-}
-
-@media screen and (max-width: 500px) {
-	#portfolio {
-		font-size: 0.8em;
-	}
-	#ATC-image {
-	    height: 90px;
-    }
-    #PAM-image {
-	    height: 160px;
-    }
-    #CT-image {
-        height: 110px;
-    }
-}
-
-@media screen and (max-width: 400px) {
-	#portfolio {
-		font-size: 0.6em;
-	}
-	.personal-logo {
-		height: 70px;
-	    width: 90px;
-	    margin: 5px;
-	}
-	#web-design-image {
-		width: 250px;
-		height: 150px;
-	}
-}*/
