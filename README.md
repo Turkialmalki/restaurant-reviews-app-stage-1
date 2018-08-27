@@ -34,7 +34,7 @@ Python has some simple tools to start up a server, and you don't even need to kn
 
 Also note that the browser must support ES6 (due to usage of the 'class' keyword). If your browser does not support the ES6 features in this game, you can use a JS transpiler such as Babel (https://babeljs.io/) to transpile the code to ES5.
 
-This repository also uses [leafletjs](https://leafletjs.com/) with [Mapbox](https://www.mapbox.com/). I am currently using my own Mapbox key within this repository, but if you choose to clone or download this repo you should replace my Mapbox key with your own. Mapbox is free to use, and does not require any payment information. 
+This repository also uses [leafletjs](https://leafletjs.com/) with [Mapbox](https://www.mapbox.com/). I am currently using my own Mapbox key to power the project, but if you choose to clone or download this repo you should replace my Mapbox key with your own. Mapbox is free to use, and does not require any payment information. 
 
 ## Other Contributors
 
