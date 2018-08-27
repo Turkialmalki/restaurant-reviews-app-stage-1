@@ -92,32 +92,37 @@
 		flex-wrap: wrap;
 		flex-direction: row;
 		width: 100%;
-		justify-content: space-between;
 	}
-	#text-container {
+	#restaurant-container {
 		order: 1;
-		margin: 0;
-		padding: 0;
-		width: 49.7%;
-		height: 100%;
+		width: 50%;
+		border-left: none;
+		border-right: none;
+		border-bottom: none;
+		border-top: 1px solid black;
 	}
 	#map-container {
 		order: 2;
-		margin: 0;
 		width: 50%;
-		border-left: none;
+		border: none;
 	}
-	#map {
-		height: 900px;
+	#reviews-container {
+		order: 3;
+		width: 100%;
+	}
+	.inside #map {
+		height: 100%;
+		border-left: none;
+		border-right: none;
 	}
 	nav h1 a {
 		font-size: 2.2em;
 	}
 	#restaurant-name {
-		font-size: 1.5em;
+		font-size: 1.8em;
 	}
 	#restaurant-address {
-		font-size: 1.0em;
+		font-size: 1.3em;
 	}
 	#restaurant-cuisine {
 		font-size: 1.3em;
@@ -127,13 +132,23 @@
 	}
 	#restaurant-hours td {
 		text-align: center;
-		font-size: 0.9em;
+		font-size: 1.3em;
 	}
 	#reviews-container h2 {
-		font-size: 2.0em;
+		font-size: 3.5em;
 	}
 	.review-name, .review-date, .review-rating {
-		font-size: 1.0em;
+		font-size: 1.6em;
+	}
+	.review-comments {
+		font-size: 1.3em;
+	}
+	#reviews-list li {
+		padding: 20px;
+		width: 90%;
+	}
+	#reviews-container {
+		border: none;
 	}
 	#breadcrumb li {
 		font-size: 1.1em;
@@ -148,32 +163,36 @@
 		flex-wrap: wrap;
 		flex-direction: row;
 		width: 100%;
-		justify-content: space-between;
 	}
-	#text-container {
+	#restaurant-container {
 		order: 1;
-		margin: 0;
-		padding: 0;
-		width: 49.7%;
-		height: 100%;
+		width: 50%;
+		border-left: none;
+		border-right: none;
+		border-bottom: none;
 	}
 	#map-container {
 		order: 2;
-		margin: 0;
 		width: 50%;
-		border-left: none;
+		border: none;
 	}
-	#map {
-		height: 900px;
+	#reviews-container {
+		order: 3;
+		width: 100%;
+	}
+	.inside #map {
+		height: 99.5%;
+		border-left: none;
+		border-right: none;
 	}
 	nav h1 a {
 		font-size: 2.2em;
 	}
 	#restaurant-name {
-		font-size: 1.5em;
+		font-size: 1.8em;
 	}
 	#restaurant-address {
-		font-size: 1.0em;
+		font-size: 1.3em;
 	}
 	#restaurant-cuisine {
 		font-size: 1.3em;
@@ -183,13 +202,20 @@
 	}
 	#restaurant-hours td {
 		text-align: center;
-		font-size: 0.9em;
+		font-size: 1.3em;
 	}
 	#reviews-container h2 {
-		font-size: 2.0em;
+		font-size: 3.5em;
 	}
 	.review-name, .review-date, .review-rating {
-		font-size: 1.0em;
+		font-size: 1.6em;
+	}
+	.review-comments {
+		font-size: 1.3em;
+	}
+	#reviews-list li {
+		padding: 20px;
+		width: 90%;
 	}
 	#breadcrumb li {
 		font-size: 1.1em;

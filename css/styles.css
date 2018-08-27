@@ -78,6 +78,7 @@ nav h1 a {
     padding-bottom: 5px;
     padding-left: 0;
     height: 10%;
+    width: 100%;
 }
 
 /* Display list items side by side */
@@ -275,14 +276,7 @@ nav h1 a {
   text-transform: uppercase;
 	width: 90%;
 }
-#text-container {
-  display: block;
-  margin: auto;
-  width: 100%;
-}
 #restaurant-container, #reviews-container {
-  vertical-align: center;
-  border: 1px solid black;
   /*padding: 140px 40px 30px;*/
 }
 #reviews-container {
@@ -321,7 +315,7 @@ nav h1 a {
   background-color: white;
   width: 90%;
   margin: auto;
-  margin-bottom: 25px;
+  margin-bottom: 0;
   border: 1px solid black;
 }
 #restaurant-hours td {
