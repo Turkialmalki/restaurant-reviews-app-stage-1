@@ -276,12 +276,8 @@ nav h1 a {
   text-transform: uppercase;
 	width: 90%;
 }
-#restaurant-container, #reviews-container {
-  /*padding: 140px 40px 30px;*/
-}
 #reviews-container {
   margin: auto;
-  /*padding: 30px 40px 80px;*/
 }
 #reviews-container h2 {
   margin: 10px 0 10px 0;
