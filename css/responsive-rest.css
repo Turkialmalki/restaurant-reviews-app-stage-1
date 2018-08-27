@@ -84,77 +84,118 @@
 	}
 }
 
-/* Slightly larger  tablet) */
+/* Slightly larger  tablet */
 /* NOTE: here we're switching to flex display */
-@media screen and (min-width: 670px) and (max-width: 844px) {
+@media screen and (min-width: 670px) and (max-width: 1000px) {
 	#maincontent {
 		display: flex;
 		flex-wrap: wrap;
+		flex-direction: row;
 		width: 100%;
+		justify-content: space-between;
 	}
-	#restaurant-container {
+	#text-container {
 		order: 1;
 		margin: 0;
+		padding: 0;
+		width: 49.7%;
+		height: 100%;
 	}
 	#map-container {
 		order: 2;
 		margin: 0;
+		width: 50%;
+		border-left: none;
 	}
-	#reviews-container {
-		order: 3;
-		margin: 0;
-	}
-	#restaurant-container, #reviews-container, #map-container {
-		width: 49%;
-	}
-	#map-container, #map {
-		height: 100%;
+	#map {
+		height: 900px;
 	}
 	nav h1 a {
 		font-size: 2.2em;
 	}
 	#restaurant-name {
-		font-size: 3.0em;
-	}
-	#restaurant-address {
 		font-size: 1.5em;
 	}
+	#restaurant-address {
+		font-size: 1.0em;
+	}
 	#restaurant-cuisine {
-		font-size: 1.8em;
+		font-size: 1.3em;
 	}
 	#restaurant-img, #restaurant-cuisine {
-		width: 90%;
+		width: 80%;
 	}
 	#restaurant-hours td {
 		text-align: center;
-		font-size: 1.3em;
+		font-size: 0.9em;
 	}
 	#reviews-container h2 {
-		font-size: 3.0em;
+		font-size: 2.0em;
 	}
 	.review-name, .review-date, .review-rating {
-		font-size: 1.3em;
+		font-size: 1.0em;
+	}
+	#breadcrumb li {
+		font-size: 1.1em;
 	}
 }
 
 /* Near full size (computer)) */
-@media screen and (min-width: 845px) and (max-width: 999px) {
+/* Still on flex here */
+@media screen and (min-width: 1000px) and (max-width: 1500px) {
+	#maincontent {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: row;
+		width: 100%;
+		justify-content: space-between;
+	}
+	#text-container {
+		order: 1;
+		margin: 0;
+		padding: 0;
+		width: 49.7%;
+		height: 100%;
+	}
+	#map-container {
+		order: 2;
+		margin: 0;
+		width: 50%;
+		border-left: none;
+	}
+	#map {
+		height: 900px;
+	}
 	nav h1 a {
 		font-size: 2.2em;
 	}
-}
-
-
-/* Full size (computer)) */
-@media screen and (min-width: 999px) {
-
-}
-
-@media screen and (min-width: 999px) and (max-width: 1200px) {
-	nav h1 a {
-		font-size: 2.2em;
+	#restaurant-name {
+		font-size: 1.5em;
+	}
+	#restaurant-address {
+		font-size: 1.0em;
+	}
+	#restaurant-cuisine {
+		font-size: 1.3em;
+	}
+	#restaurant-img, #restaurant-cuisine {
+		width: 80%;
+	}
+	#restaurant-hours td {
+		text-align: center;
+		font-size: 0.9em;
+	}
+	#reviews-container h2 {
+		font-size: 2.0em;
+	}
+	.review-name, .review-date, .review-rating {
+		font-size: 1.0em;
+	}
+	#breadcrumb li {
+		font-size: 1.1em;
 	}
 }
+
 
 
 /* Full size (large computer)) */
