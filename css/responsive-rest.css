@@ -153,11 +153,14 @@
 	#breadcrumb li {
 		font-size: 1.1em;
 	}
+	#footer {
+		font-size: 1.3em;
+	}
 }
 
 /* Near full size (computer)) */
 /* Still on flex here */
-@media screen and (min-width: 1000px) and (max-width: 1500px) {
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
 	#maincontent {
 		display: flex;
 		flex-wrap: wrap;
@@ -170,6 +173,7 @@
 		border-left: none;
 		border-right: none;
 		border-bottom: none;
+		border-top: 1px solid black;
 	}
 	#map-container {
 		order: 2;
@@ -189,13 +193,13 @@
 		font-size: 2.2em;
 	}
 	#restaurant-name {
-		font-size: 1.8em;
+		font-size: 2.1em;
 	}
 	#restaurant-address {
-		font-size: 1.3em;
+		font-size: 1.6em;
 	}
 	#restaurant-cuisine {
-		font-size: 1.3em;
+		font-size: 1.6em;
 	}
 	#restaurant-img, #restaurant-cuisine {
 		width: 80%;
@@ -205,29 +209,95 @@
 		font-size: 1.3em;
 	}
 	#reviews-container h2 {
-		font-size: 3.5em;
+		font-size: 4.5em;
 	}
 	.review-name, .review-date, .review-rating {
-		font-size: 1.6em;
+		font-size: 2.0em;
 	}
 	.review-comments {
-		font-size: 1.3em;
+		font-size: 1.6em;
 	}
 	#reviews-list li {
 		padding: 20px;
+		margin-bottom: 20px;
 		width: 90%;
 	}
 	#breadcrumb li {
-		font-size: 1.1em;
+		font-size: 1.4em;
+	}
+	#footer {
+		font-size: 1.5em;
 	}
 }
 
-
-
 /* Full size (large computer)) */
 @media screen and (min-width: 1200px) {
+	#maincontent {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: row;
+		width: 100%;
+	}
+	#restaurant-container {
+		order: 1;
+		width: 50%;
+		border-left: none;
+		border-right: none;
+		border-bottom: none;
+		border-top: 1px solid black;
+	}
+	#map-container {
+		order: 2;
+		width: 50%;
+		border: none;
+	}
+	#reviews-container {
+		order: 3;
+		width: 100%;
+	}
+	.inside #map {
+		height: 99.5%;
+		border-left: none;
+		border-right: none;
+	}
 	nav h1 a {
+		font-size: 2.7em;
+	}
+	#restaurant-name {
+		font-size: 2.8em;
+	}
+	#restaurant-address {
+		font-size: 1.8em;
+	}
+	#restaurant-cuisine {
+		font-size: 1.9em;
+	}
+	#restaurant-img, #restaurant-cuisine {
+		width: 80%;
+	}
+	#restaurant-hours td {
+		text-align: center;
+		font-size: 1.6em;
+	}
+	#reviews-container h2 {
+		font-size: 5.0em;
+	}
+	.review-name, .review-date, .review-rating {
+		font-size: 2.6em;
+	}
+	.review-comments {
 		font-size: 2.2em;
+	}
+	#reviews-list li {
+		padding: 20px;
+		margin-bottom: 20px;
+		width: 90%;
+	}
+	#breadcrumb li {
+		font-size: 1.7em;
+	}
+	#footer {
+		font-size: 1.5em;
 	}
 }
 
