@@ -1,4 +1,4 @@
-# Restaurant Review App
+# Restaurant Reviews App
 
 ![App Screenshot](app-screenshot.PNG)
 
@@ -11,7 +11,7 @@
 
 ## Instructions
 
-This project is a simple single-page application that allows users to select a residential area in New York City and view a list of nearby restaurants. For each restaurant in the application, the application includes a map highlighting the restaurant's location (powered by Mapbox), a list of recent user reviews, and an assortment of details about food selection/hours (for the purpose of this project, the latter two elements are retrieved from a JSON file within this repository).
+This project is a simple single-page application that allows users to select a residential area in New York City and view a list of nearby restaurants. For each restaurant in the application, the application includes a map highlighting the restaurant's location (powered by Mapbox), a set of recent user reviews, and an assortment of details about food selection/hours (for the purpose of this project, the latter two elements are retrieved from a JSON file within this repository).
 
 To run this application on your browser, you'll need to download the following files (all included within this repository!):
 1. index.html, restaurants.html
