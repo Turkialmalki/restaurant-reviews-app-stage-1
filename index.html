@@ -28,11 +28,11 @@
         <h2 aria-label="Filter Results">Filter Results</h2>
         <!-- Add aria label and role for neighborhood select -->
         <select id="neighborhoods-select" aria-label="neighborhood select" role="combobox" name="neighborhoods" tabindex="0" onchange="updateRestaurants()">
-          <option value="all">All Neighborhoods</option>
+          <option value="all" role="textbox">All Neighborhoods</option>
         </select>
         <!-- Add aria label for cuisine select -->
         <select id="cuisines-select" aria-label="cuisine select" name="cuisines" tabindex="0" onchange="updateRestaurants()">
-          <option value="all">All Cuisines</option>
+          <option value="all" role="textbox">All Cuisines</option>
         </select>
       </div>
       <ul id="restaurants-list" aria-label="restaurant list"></ul>
