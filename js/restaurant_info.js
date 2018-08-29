@@ -85,6 +85,9 @@ fillRestaurantHTML = (restaurant = self.restaurant) => {
 
   const address = document.getElementById('restaurant-address');
   address.innerHTML = restaurant.address;
+  /* Add focus and aria label to "address" element for accessibility */
+  address.setAttribute('tabindex', '0');
+  address.setAttribute('aria-label', `restaurant address ${restaurant.address}`);
 
   const image = document.getElementById('restaurant-img');
   image.className = 'restaurant-img'
@@ -120,6 +123,9 @@ fillRestaurantHoursHTML = (operatingHours = self.restaurant.operating_hours) => 
     row.appendChild(time);
 
     hours.appendChild(row);
+    /* Add focus and aria label to "hours" element for accessibility */
+    row.setAttribute('tabindex', '0');
+    row.setAttribute('aria-label', `hours ${key} ${operatingHours[key]}`);
   }
 }
 
@@ -173,6 +179,10 @@ createReviewHTML = (review) => {
   /* Add review comment class */
   comments.classList.add('review-comments');
   li.appendChild(comments);
+
+  /* Add focus and aria label to "review" element for accessibility */
+  li.setAttribute('tabindex', '0');
+  li.setAttribute('aria-label', `review ${review.name} ${review.date} rating ${review.rating} ${review.comments}`);
 
   return li;
 }
