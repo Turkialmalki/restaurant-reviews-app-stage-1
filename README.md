@@ -32,9 +32,11 @@ Once all the above files have been loaded onto your computer, start up a simple 
 
 Python has some simple tools to start up a server, and you don't even need to know Python. In a terminal, check the version of Python you have: `python -V`. If you have Python 2.x, spin up the server with `python -m SimpleHTTPServer 8000` (or some other port, if port 8000 is already in use.) For Python 3.x, you can use `python3 -m http.server 8000` (on certain Windows computers, the command may instead be `python -m http.server 8000`. If you don't have Python installed, navigate to Python's [website](https://www.python.org/) to download and install the software.
 
-Also note that the browser must support ES6 (due to usage of the 'class' keyword). If your browser does not support the ES6 features in this game, you can use a JS transpiler such as Babel (https://babeljs.io/) to transpile the code to ES5.
+Note that the browser must support ES6 (due to usage of the 'class' keyword). If your browser does not support the ES6 features in this game, you can use a JS transpiler such as Babel (https://babeljs.io/) to transpile the code to ES5.
 
 This repository also uses [leafletjs](https://leafletjs.com/) with [Mapbox](https://www.mapbox.com/). I am currently using my own Mapbox key to power the project, but if you choose to clone or download this repo you should replace my Mapbox key with your own. Mapbox is free to use, and does not require any payment information. 
+
+If you are having issues loading the "restaurant details" pages or utilizing the service worker, try clearing your browser cache and restarting the project. 
 
 ## Other Contributors
 
