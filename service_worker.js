@@ -6,7 +6,7 @@
 
 */
 
-const cacheName = 'restaurant-reviews-app-v1';
+const currentCacheName = 'restaurant-reviews-app-v1';
 
 // Once install phase complete, add all URLs to the cache
 self.addEventListener('install', function(event) {
@@ -36,7 +36,7 @@ self.addEventListener('install', function(event) {
   ];
 
   event.waitUntil(
-    caches.open(cacheName).then(function(cache) {
+    caches.open(currentCacheName).then(function(cache) {
       // console.log('cache time');
       return cache.addAll(cacheURLs);
     })
@@ -55,4 +55,20 @@ self.addEventListener('fetch', function(event) {
       return fetch(event.request);
     })
   );
+});
+
+// Delete old caches upon activation of a new SW if there is a new one specified
+self.addEventListener('activate', function(event) {
+	event.waitUntil(
+		caches.keys().then(function(cacheNames) {
+			return Promise.all(
+				cacheNames.filter(function(cacheName) {
+					return cacheName.startsWith('restaurant-reviews-app') && cacheName != currentCacheName;
+				}).map(function(cacheName) {
+					return caches.delete(cacheName);
+				})
+			);
+		})
+	);
+	// console.log('cache deleted');
 });
