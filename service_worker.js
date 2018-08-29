@@ -10,7 +10,7 @@ const cacheName = 'restaurant-reviews-app-v1';
 
 // Once install phase complete, add all URLs to the cache
 self.addEventListener('install', function(event) {
-  console.log('service worker installing');
+  // console.log('service worker installing');
 
   const cacheURLs = [
     '/',
@@ -37,7 +37,7 @@ self.addEventListener('install', function(event) {
 
   event.waitUntil(
     caches.open(cacheName).then(function(cache) {
-      console.log('cache time');
+      // console.log('cache time');
       return cache.addAll(cacheURLs);
     })
   );
