@@ -186,7 +186,7 @@ nav h1 a {
   height: 300px;
 }
 
-#restaurants-list li h1 {
+.restaurant-name {
   color: #ad5f03;
   font-family: Arial,sans-serif;
   font-size: 20pt;
@@ -279,7 +279,7 @@ nav h1 a {
 #reviews-container {
   margin: auto;
 }
-#reviews-container h2 {
+.review-title {
   margin: 10px 0 10px 0;
   text-align: center;
   color: #ad5f03;

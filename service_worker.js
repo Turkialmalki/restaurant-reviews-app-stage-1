@@ -6,7 +6,7 @@
 
 */
 
-const currentCacheName = 'restaurant-reviews-app-v1';
+const currentCacheName = 'restaurant-reviews-app-v2';
 
 // Once install phase complete, add all URLs to the cache
 self.addEventListener('install', function(event) {

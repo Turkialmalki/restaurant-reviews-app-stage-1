@@ -12,7 +12,7 @@
 
 /* Minimum screen size (small mobile) */
 @media screen and (max-width: 400px) {
-	#restaurants-list li h1 {
+	.restaurant-name {
 		font-size: 13pt;
 	}
 	#restaurants-list .restaurant-img {
@@ -40,7 +40,7 @@
 		margin-left: 10px;
 		display: inline-block;
 	}
-	#restaurants-list li h1, #restaurants-list p, #restaurants-list li a {
+	.restaurant-name, #restaurants-list p, #restaurants-list li a {
 		font-size: 1.5em;
 	}
 	#footer {
@@ -77,7 +77,7 @@
 		margin-left: 10px;
 		display: inline-block;
 	}
-	#restaurants-list li h1{
+	.restaurant-name {
 		font-size: 1.5em;
 	}
 	#restaurants-list li a {
@@ -110,7 +110,7 @@
 		margin-left: 10px;
 		display: inline-block;
 	}
-	#restaurants-list li h1{
+	.restaurant-name {
 		font-size: 1.5em;
 	}
 	#restaurants-list p, #restaurants-list li a {
@@ -146,7 +146,7 @@
 		margin-left: 10px;
 		display: inline-block;
 	}
-	#restaurants-list li h1{
+	.restaurant-name {
 		font-size: 1.5em;
 	}
 	#restaurants-list p, #restaurants-list li a {
@@ -186,7 +186,7 @@
 		margin-left: 10px;
 		display: inline-block;
 	}
-	#restaurants-list li h1{
+	.restaurant-name {
 		font-size: 1.5em;
 	}
 	#restaurants-list p, #restaurants-list li a {
@@ -223,7 +223,7 @@
 		margin-left: 10px;
 		display: inline-block;
 	}
-	#restaurants-list li h1{
+	.restaurant-name {
 		font-size: 1.8em;
 	}
 	#restaurants-list p, #restaurants-list li a {

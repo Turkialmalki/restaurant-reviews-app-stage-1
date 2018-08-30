@@ -165,8 +165,10 @@ createRestaurantHTML = (restaurant) => {
   image.alt = restaurant.name;
   li.append(image);
 
-  const name = document.createElement('h1');
+  /* Lower comparative priority of heading - all restaurant names are h2 (second to title) */
+  const name = document.createElement('h2');
   name.innerHTML = restaurant.name;
+  name.classList.add('restaurant-name');
   li.append(name);
 
   const neighborhood = document.createElement('p');
