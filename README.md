@@ -40,7 +40,7 @@ If you are having issues loading the "restaurant details" pages or utilizing the
 
 ## Other Contributors
 
-Starter HTML / CSS / JS code, game engine, and default artwork (including images, styling, and symbols) taken from the [Udacity classroom repository](https://github.com/udacity/mws-restaurant-stage-1).
+Starter HTML / CSS / JS code and default artwork (including images, styling, and symbols) taken from the [Udacity classroom repository](https://github.com/udacity/mws-restaurant-stage-1).
 
 [CODEOWNERS](CODEOWNERS) also includes a list of individual contributors to the original project.
 
